@@ -43,6 +43,9 @@ models:
         description: Foreign key to the customers table
         tests:
           - not_null
+          - unique:
+              config:
+                severity: warn
           - relationships:
               to: ref('customers')
               field: customer_id
