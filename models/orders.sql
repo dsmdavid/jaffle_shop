@@ -5,7 +5,7 @@ with orders as (
     select * from {{ ref('stg_orders') }}
 
 ),
-ooppss  this breaks
+
 payments as (
 
     select * from {{ ref('stg_payments') }}
