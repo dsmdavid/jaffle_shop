@@ -45,7 +45,7 @@ models:
           - not_null
           - unique:
               config:
-                severity: warn
+                severity: error
           - relationships:
               to: ref('customers')
               field: customer_id
